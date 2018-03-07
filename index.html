@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+	    <title>预约试驾</title>
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,shrink-to-fit=no">
+	    <meta content="yes" name="apple-mobile-web-app-capable">
+	    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+	    <meta content="telephone=no" name="format-detection">
+	    <meta name="msapplication-tap-highlight" content="no">
+		<link rel="stylesheet" href="bomebox/css/global.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script src="js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="bomebox/js/windowOpen.js"></script>
+		<script src="https://h5api.xingyuanauto.com/StatisticsData"></script>
+		<script>
+			//检测代码
+			var _hmt = _hmt || [];
+			(function() {
+				var hm = document.createElement("script");
+				hm.src = "https://hm.baidu.com/hm.js?fdf0d2736b81bcae38aee0a100352a30";
+				var s = document.getElementsByTagName("script")[0];
+				s.parentNode.insertBefore(hm, s);
+			})();
+		</script>
+		<script>
+			//页面提示二维码
+//			if(navigator.userAgent.match(/(iPhone|iPod|Android|ios|SymbianOS)/i) == null){
+//				// console.log(window.innerWidth);
+//				window.location.href = "https://h5.xingyuanauto.com/201711-New/viewpc/?link="+window.location.href;
+//			}
+		</script>
+	</head>
+	<body>
+		<div class="box">
+			<img src="img/background.jpg" class="background"/>
+			<!--注册页-->
+			<div class="userEnd" id="userEnd">
+			    <div  class="userInfo-box" >
+					<form id="userForm" >
+			        <ul class="input-form">
+			            <li>
+			                <span >姓名</span>
+			                <input   type="text" id="username" name="username" placeholder="姓名"  maxlength=10 minlength=2 required="required" />
+			            </li>
+			            <li>
+			            	<span id="people">性别</span>
+			            	<select id="sex" name="sex" class="sex">
+								<option value="0">性别</option>
+			            		<option value="男">男</option>
+			            		<option value="女">女</option>
+			            	</select>
+							<em class="select-icon"></em>
+			            </li>
+			            <li>
+			                <span >手机</span>
+			                <input type="tel" id="phone" name="phone" placeholder="手机" maxlength=11  required="required" />
+			            </li>
+						<li>
+							<span class="longspan">计划购车时间</span>
+							<select class="longselect" name="cartime" id="cartime">
+								<option value="0">选择时间</option>
+								<option value="0-3个月">0-3个月</option>
+								<option value="4-6个月">4-6个月</option>
+								<option value="7-12个月">7-12个月</option>
+								<option value="1-2年">1-2年</option>
+							</select>
+							<em class="select-icon"></em>
+						</li>
+						<li>
+							<span class="longspan">感兴趣车型</span>
+							<select class="longselect" name="cartype" id="cartype">
+								<option value="0"  >选择车型</option>
+								<option value="E 200 L运动轿车">E 200 L运动轿车</option>
+								<option value="E 200 L 4MATIC运动轿车">E 200 L 4MATIC运动轿车</option>
+								<option value="E 300 L 时尚型运动轿车">E 300 L 时尚型运动轿车</option>
+								<option value="E 300 L 豪华型运动轿车">E 300 L 豪华型运动轿车</option>
+								<option value="E 320 L 4MATIC 运动轿车">E 320 L 4MATIC 运动轿车</option>
+								<option value="E 200 L轿车">E 200 L轿车</option>
+								<option value="E 200 L 4MATIC轿车">E 200 L 4MATIC轿车</option>
+								<option value="E 300 L 时尚型轿车">E 300 L 时尚型轿车</option>
+								<option value="E 300 L 豪华型轿车">E 300 L 豪华型轿车</option>
+								<option value="E 320 L 4MATIC 轿车">E 320 L 4MATIC 轿车</option>
+								<option value="E 200运动版">E 200运动版</option>
+								<option value="E 200 4MATIC运动版">E 200 4MATIC运动版</option>
+								<option value="E 300运动版">E 300运动版</option>
+							</select>
+							<em class="select-icon"></em>
+						</li>
+			            <li class="province-city">
+			                <select id="ddlProvince" name="ddlProvince" class="ddlProvince" title="省/00" >
+			                    <option value="0">选择省份</option>
+			                </select>
+			                <em class="select-icon select-province"></em>
+			                <select id="ddlCity" name="ddlCity" class="ddlCity">
+			                    <option value="0">选择城市</option>
+			                </select>
+			                <em class="select-icon"></em>
+			            </li>
+			            <li>
+			                <span>经销商</span>
+							<select id="agency" name="agency" >
+								<option value="0">选择经销商</option>
+							</select>
+			                <em class="select-icon"></em>
+			            </li>
+			        </ul>
+					</form>
+			        <div id="btn-userInfo"  class="btn-userInfo btn-move">确认提交</div>
+			    </div>
+			</div>
+
+	</div>
+	</body>
+	<script type="text/javascript" src="https://webapi.amap.com/maps?v=1.3&key=c6e98d53fff2282e4e517a920471d2f1&plugin=AMap.CitySearch"></script>
+	<script src="js/Benc_dealer.js"></script>
+	<script src="js/province.js"></script>
+    <script src="js/style.js" type="text/javascript" charset="utf-8"></script>
+	<!--分享代码-->
+	<script type="text/javascript" src="https://h5php.xingyuanauto.com/weixin_serve/jssdk/js/wx_share.js"></script>
+	<script>
+		$(function(){
+			//微信分享调用
+			var wxShare = new WxShare({ //微信自定义分享功能
+				title:'下班了 快闪人', //分享标题
+				desc:'下班不快点走准没好事',//分享描述
+				img:'img/share.jpg'//分享图片
+			});
+
+		})
+
+</script>
+	
+</html>

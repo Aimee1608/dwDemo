@@ -1,0 +1,364 @@
+/*reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+}
+body {
+  font-family: Arial, "STHeiti", Helvetica, sans-serif;
+  background: #fff;
+  font-size: 14px;
+  height: 100%;
+  //max-width: 750px;
+  //min-width: 20pc;
+  line-height: 1.5;
+  -webkit-tap-highlight-color: transparent;
+}
+button,
+input {
+    line-height: normal;
+}
+button,
+select {  
+    text-transform: none;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer; 
+}
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box; 
+    padding: 0; 
+}
+input[type="search"] {
+    -webkit-appearance: textfield;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; 
+    box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+textarea {
+    overflow: auto;
+    vertical-align: top;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+ html, body {
+        position: relative;
+        width: 100%;
+    }
+    body {
+        
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        
+        margin: 0;
+        padding: 0;
+    }
+/************留资内容背景图**************/
+.box{
+    width: 100%;
+    height:3401/75rem;
+  position: relative;
+}
+.background{width:100%; height: auto;margin:0;padding: 0;position: absolute;left:0;top:0}
+
+/***********************表单**********************/
+  ul{
+    list-style: none;
+  }
+  input,select{
+    border:0;
+    outline:none;
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+  }
+  .userEnd{
+    width:100%;
+    height:500/75rem;
+    position:absolute;
+    top:906/75rem;
+    left:0;
+  }
+  .userInfo-box{
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    width:544/75rem;
+    height:500/75rem;
+    position: absolute;
+    left:103/75rem;
+    .input-form {
+      box-sizing: border-box;
+      width: 100%;
+      li {
+        box-sizing: border-box;
+        width: 100%;
+        height: 52/75rem;
+        margin-bottom: 18/75rem;
+        font-size: 24/75rem;
+        position: relative;
+        em.select-icon{
+          width:16/75rem;
+          height:12/75rem;
+          background: #666;
+          -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+          clip-path: polygon(50% 100%, 0 0, 100% 0);
+          position: absolute;
+          right:12/75rem;
+          top:50%;
+          transform: translate(0,-50%);
+          -webkit-transform: translate(0,-50%);
+        }
+        span {
+          color: #fff;
+          position: absolute;
+          left: -1px;
+          font-size: 24/75rem;
+          width: 125/75rem;
+          height: 52/75rem;
+          line-height: 52/75rem;
+          text-align: center;
+          background: #1f1f1f;
+          letter-spacing:2px;
+        }
+        span.longspan{
+          width:180/75rem;
+          letter-spacing:1.5px;
+        }
+        input {
+          padding-left: 130/75rem;
+          box-sizing: border-box;
+          width: 100%;
+          height: 100%;
+          font-size: 24/75rem;
+          border-radius: 0;
+        }
+        select {
+          float: right;
+          padding-left: 130/75rem;
+          box-sizing: border-box;
+          width: 100%;
+          height: 100%;
+          font-size: 24/75rem;
+          border-radius: 0;
+          color:#999;
+          letter-spacing: 1px;
+          white-space:nowrap;
+          overflow:hidden;
+          text-overflow:ellipsis;
+          padding-right:30/75rem;
+          background: #fff;
+        }
+        select.longselect{
+          padding-left:185/75rem;
+          background: #fff;
+        }
+        select.changed{
+          color:#333;
+        }
+      }
+      li.province-city {
+        border: 0;
+        width:100%;
+        select.ddlProvince {
+          float: left;
+          box-sizing: border-box;
+          padding-left: 8/75rem;
+          width: 260/75rem;
+          height: 52/75rem;
+          background: #fff;
+        }
+        select.ddlCity {
+          padding-left: 8/75rem;
+          float: right;
+          box-sizing: border-box;
+          width: 260/75rem;
+          height: 52/75rem;
+          background: #fff;
+        }
+        em.select-province{
+          left:229/75rem;
+        }
+      }
+      li.province-city:after {
+        content: '';
+        display: none;
+        clear: both;
+      }
+    }
+
+  }
+.btn-userInfo{
+  box-sizing:border-box;
+  width:283/75rem;
+  height:50/75rem;
+  line-height: 50/75rem;
+  top:500/75rem;
+  left:130.5/75rem ;
+  position:absolute;
+  background:#50abe9;
+  animation: joinClick 4s ease infinite ;
+  -webkit-animation: joinClick 4s ease infinite ;
+  letter-spacing: 3px;
+  text-align: center;
+  color:#fff;
+  font-size:26/75rem;
+}
+.btn-move{
+  -webkit-animation:buttonTada 4s ease infinite ;
+  animation:buttonTada 4s ease infinite ;
+}
+
+@keyframes joinClick {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  2.5%, 5% {
+    -webkit-transform: scale(.95) rotate3d(0, 0, 1, -2deg);
+    transform: scale(.95) rotate3d(0, 0, 1, -2deg);
+  }
+
+  7.5%, 12.5%, 17.5%, 22.5% {
+    -webkit-transform: scale(1.15) rotate3d(0, 0, 1, 2deg);
+    transform: scale(1.15) rotate3d(0, 0, 1, 2deg);
+  }
+
+  10%, 15%, 20% {
+    -webkit-transform: scale(1.15) rotate3d(0, 0, 1, -2deg);
+    transform: scale(1.15) rotate3d(0, 0, 1, -2deg);
+  }
+  25% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100%{
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes joinClick {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  2.5%, 5% {
+    -webkit-transform: scale(.95) rotate3d(0, 0, 1, -2deg);
+    transform: scale(.95) rotate3d(0, 0, 1, -2deg);
+  }
+
+  7.5%, 12.5%, 17.5%, 22.5% {
+    -webkit-transform: scale(1.1) rotate3d(0, 0, 1, 2deg);
+    transform: scale(1.1) rotate3d(0, 0, 1, 2deg);
+  }
+
+  10%, 15%, 20% {
+    -webkit-transform: scale(1.1) rotate3d(0, 0, 1, -2deg);
+    transform: scale(1.1) rotate3d(0, 0, 1, -2deg);
+  }
+  25% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100%{
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes buttonTada {//loading开始小图标
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  2.5%, 5% {
+    -webkit-transform: scale(.95) rotate3d(0, 0, 1, -0.5deg);
+    transform: scale(.95) rotate3d(0, 0, 1, -0.5deg);
+  }
+
+  7.5%, 12.5%, 17.5%, 22.5% {
+    -webkit-transform: scale(1.05) rotate3d(0, 0, 1, 0.5deg);
+    transform: scale(1.05) rotate3d(0, 0, 1, 0.5deg);
+  }
+
+  10%, 15%, 20% {
+    -webkit-transform: scale(1.05) rotate3d(0, 0, 1, -0.5deg);
+    transform: scale(1.05) rotate3d(0, 0, 1, -0.5deg);
+  }
+  25% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100%{
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes buttonTada {//loading开始小图标
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  2.5%, 5% {
+    -webkit-transform: scale(.95) rotate3d(0, 0, 1, -0.5deg);
+    transform: scale(.95) rotate3d(0, 0, 1, -0.5deg);
+  }
+
+  7.5%, 12.5%, 17.5%, 22.5% {
+    -webkit-transform: scale(1.05) rotate3d(0, 0, 1, 0.5deg);
+    transform: scale(1.05) rotate3d(0, 0, 1, 0.5deg);
+  }
+
+  10%, 15%, 20% {
+    -webkit-transform: scale(1.05) rotate3d(0, 0, 1, -0.5deg);
+    transform: scale(1.05) rotate3d(0, 0, 1, -0.5deg);
+  }
+  25% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100%{
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
